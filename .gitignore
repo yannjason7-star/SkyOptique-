@@ -1,0 +1,11 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Environnement (SÉCURITÉ)
+.env
+*.log
+
+# Dossiers de dépendances
+node_modules/
+dist/
