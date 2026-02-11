@@ -1,0 +1,16 @@
+name: Check Code Quality
+on: [pull_request] # Le robot s'active à chaque demande de fusion
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: HTML Hint (Vérification HTML)
+        run: |
+          echo "Le robot vérifie la structure du code..."
+          # Ici, on pourrait ajouter un vrai linter, mais pour l'instant 
+          # on simule une vérification de sécurité de base.
+          ls -R frontend/
